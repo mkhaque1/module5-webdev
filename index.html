@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="A personal portfolio website showcasing my projects and skills."
+    />
+    <!-- Link your own CSS file here -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
+    <!-- ===================== HEADER ===================== -->
+    <header>
+      <div class="logo">
+        <h1 id="name">Your Name Here</h1>
+        <p>Front-End Developer &amp; Designer</p>
+      </div>
+
+      <!-- ===================== NAVIGATION ===================== -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#" id="btn" onclick="colorChange()">Click me</a>
+          </li>
+        </ul>
+        <button id="random-button">Random Color</button>
+      </nav>
+    </header>
+
+    <hr />
+
+    <!-- ===================== MAIN CONTENT ===================== -->
+    <main>
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <h2 id="about-heading">About Me</h2>
+        <article>
+          <p>
+            I am a <strong>web developer</strong> who loves building
+            <em>clean</em> and <mark>accessible</mark> websites. Here is a small
+            snippet of code I'm proud of:
+          </p>
+          <p>
+            You can find my resume
+            <a href="#" target="_blank" rel="noopener noreferrer">here</a>.
+          </p>
+          <blockquote cite="https://example.com">
+            "Design is not just what it looks like and feels like. Design is how
+            it works."
+            <cite>— Steve Jobs</cite>
+          </blockquote>
+          <p>
+            I started learning to code on
+            <time datetime="2023-01-15">January 15, 2023</time>.
+          </p>
+        </article>
+
+        <aside>
+          <p>
+            <small
+              >Fun fact: I drink way too much coffee while coding.
+              <abbr title="Just kidding">JK</abbr> (maybe).</small
+            >
+          </p>
+        </aside>
+      </section>
+
+      <hr />
+
+      <!-- SKILLS SECTION -->
+      <section id="skills">
+        <h2>Skills</h2>
+
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>
+            JavaScript
+            <ol>
+              <li>ES6+</li>
+              <li>DOM Manipulation</li>
+            </ol>
+          </li>
+          <li>Responsive Design</li>
+        </ul>
+
+        <h3>Skill Levels</h3>
+        <p>
+          <label for="html-skill">HTML</label>
+          <progress id="html-skill" value="90" max="100">90%</progress>
+        </p>
+        <p>
+          <label for="css-skill">CSS</label>
+          <meter id="css-skill" value="0.7" min="0" max="1">70%</meter>
+        </p>
+
+        <h3>Tools I Use</h3>
+        <table border="1">
+          <caption>
+            Frequently Used Tools
+          </caption>
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Purpose</th>
+              <th>Experience (Years)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>VS Code</td>
+              <td>Code Editor</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Git</td>
+              <td>Version Control</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Figma</td>
+              <td>UI Design</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Updated regularly as I learn more tools.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <hr />
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <details>
+          <summary>Project 1: To-Do App</summary>
+          <p>A simple to-do list app built with vanilla JavaScript.</p>
+          <figure>
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Screenshot of To-Do App"
+              width="300"
+              height="200"
+            />
+            <figcaption>Screenshot of the To-Do App interface</figcaption>
+          </figure>
+        </details>
+
+        <details>
+          <summary>Project 2: Weather Dashboard</summary>
+          <p>A dashboard that fetches live weather data using an API.</p>
+          <figure>
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Screenshot of Weather Dashboard"
+              width="300"
+              height="200"
+            />
+            <figcaption>Screenshot of the Weather Dashboard</figcaption>
+          </figure>
+        </details>
+
+        <details>
+          <summary>Project 3: Portfolio Website</summary>
+          <p>The very website you are looking at right now!</p>
+        </details>
+      </section>
+
+      <hr />
+
+      <!-- GALLERY / MEDIA SECTION -->
+      <section id="gallery">
+        <h2>Gallery &amp; Media</h2>
+
+        <div class="gallery-image">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="A sample workspace setup"
+              width="400"
+              height="250"
+            />
+            <figcaption>My coding workspace</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="A sample workspace setup"
+              width="400"
+              height="250"
+            />
+            <figcaption>My coding workspace</figcaption>
+          </figure>
+        </div>
+
+        <h3>Sample Video</h3>
+        <video autoplay width="400">
+          <source
+            src="https://www.pexels.com/download/video/34992134/"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <h3>Sample Audio</h3>
+        <audio controls>
+          <source src="sample-audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio tag.
+        </audio>
+
+        <h3>Code Snippet Example</h3>
+        <pre><code>function greet(name) {
+    return "Hello, " + name + "!";
+}</code></pre>
+
+        <p>Inline code example: <code>console.log("Hello World");</code></p>
+      </section>
+
+      <hr />
+
+      <!-- TESTIMONIALS SECTION -->
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+          <p>"Great attention to detail and always delivers on time."</p>
+          <footer>— A Happy Client</footer>
+        </blockquote>
+        <blockquote>
+          <p>"Very easy to work with and communicates clearly."</p>
+          <footer>— A Teammate</footer>
+        </blockquote>
+      </section>
+
+      <hr />
+
+      <!-- CONTACT / FORM SECTION -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Contact Form</legend>
+
+            <p>
+              <label for="fullname">Full Name:</label><br />
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your name"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="phone">Phone:</label><br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="123-456-7890"
+              />
+            </p>
+
+            <p>
+              <label for="birthday">Birthday:</label><br />
+              <input type="date" id="birthday" name="birthday" />
+            </p>
+
+            <p>
+              <label for="budget">Project Budget:</label><br />
+              <input
+                type="range"
+                id="budget"
+                name="budget"
+                min="0"
+                max="1000"
+                step="50"
+              />
+            </p>
+
+            <p>
+              <label for="favcolor">Favorite Color:</label>
+              <input type="color" id="favcolor" name="favcolor" />
+            </p>
+
+            <p>
+              <label for="subject">Subject:</label><br />
+              <select id="subject" name="subject">
+                <option value="">-- Please choose an option --</option>
+                <option value="job">Job Opportunity</option>
+                <option value="freelance">Freelance Project</option>
+                <option value="other">Other</option>
+              </select>
+            </p>
+
+            <p>
+              <span>Preferred Contact Method:</span><br />
+              <input
+                type="radio"
+                id="contact-email"
+                name="contact-method"
+                value="email"
+                checked
+              />
+              <label for="contact-email">Email</label>
+
+              <input
+                type="radio"
+                id="contact-phone"
+                name="contact-method"
+                value="phone"
+              />
+              <label for="contact-phone">Phone</label>
+            </p>
+
+            <p>
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                value="yes"
+              />
+              <label for="newsletter">Subscribe to newsletter</label>
+            </p>
+
+            <p>
+              <label for="message">Message:</label><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                cols="40"
+                placeholder="Type your message here..."
+              ></textarea>
+            </p>
+
+            <p>
+              <label for="resume">Upload Resume:</label><br />
+              <input type="file" id="resume" name="resume" />
+            </p>
+
+            <p>
+              <label for="experience-list">How did you hear about me?</label
+              ><br />
+              <input
+                list="sources"
+                id="experience-list"
+                name="experience-list"
+              />
+              <datalist id="sources">
+                <option value="LinkedIn"></option>
+                <option value="GitHub"></option>
+                <option value="Referral"></option>
+                <option value="Other"></option>
+              </datalist>
+            </p>
+
+            <p>
+              <button type="submit">Send Message</button>
+              <button type="reset">Clear Form</button>
+            </p>
+          </fieldset>
+        </form>
+
+        <h3>Follow Me</h3>
+        <address>
+          Find me online:<br />
+          <a href="#">GitHub</a> | <a href="#">LinkedIn</a> |
+          <a href="#">Twitter</a>
+        </address>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+      <p>
+        &copy; <time datetime="2026">2026</time> My Portfolio. All rights
+        reserved.
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
